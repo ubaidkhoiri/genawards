@@ -109,13 +109,13 @@ Buttons (C-19, lines 133 and 141): `.button` background `var(--color-brand)`, te
 **Files:**
 - Modify: `index.html`
 
-- [ ] Step 1: Replace every em dash (`—`) in interface text with a comma or colon. Sites observed:
+- [x] Step 1: Replace every em dash (`—`) in interface text with a comma or colon. Sites observed:
   - line 7 `og:title content="GenAwards — Design Kit Event"` and line 11 `<title>`: replace ` — ` with ` · `
   - lines 255, 259, 263, 267, 271, 275 figcaption: replace `<strong>…</strong> — sumber:` with `<strong>…</strong>. Sumber:` (period after the close tag, then a space). Keep the Indonesian copy otherwise.
-- [ ] Step 2: Compute the resolved hex of every rendered swatch color. Source of truth is the jig token file after Task 1, evaluated in light mode against `--color-bg-raised` (the card/surface the swatch sits on), and in the two dark blocks for the dark swatches. Resolve with a browser or by converting the token value to sRGB hex offscreen (e.g. a headless Chromium `getComputedStyle`). Record the result as a table.
-- [ ] Step 3: Update every swatch `data-copy` and its `swatch__meta` text (`#HEX · RGB r, g, b`) to the computed hex/RGB from step 2. The nine light swatches: `swatch--primary`, `swatch--primary-hover`, `swatch--secondary`, `swatch--accent`, `swatch--bg`, `swatch--surface`, `swatch--text`, `swatch--text-muted`, `swatch--border` (lines 38-81). The five dark swatches: `swatch--bg`, `swatch--surface`, `swatch--text`, `swatch--text-muted`, `swatch--border` under "Palet Gelap" (lines 88-111). `swatch--secondary` maps to `--color-text-strong` per Task 2 mapping; `swatch--primary-hover` label value equals the primary value.
-- [ ] Step 4: Verify: `rg -c '—' index.html` returns 0. Confirm each `data-copy` matches the resolved table. Run `node --check assets/js/main.js` exit 0 and `node --check assets/js/gallery.js` exit 0.
-- [ ] Step 5: Commit as `fix: replace em dashes, publish recomputed swatch values`.
+- [x] Step 2: Compute the resolved hex of every rendered swatch color. Source of truth is the jig token file after Task 1, evaluated in light mode against `--color-bg-raised` (the card/surface the swatch sits on), and in the two dark blocks for the dark swatches. Resolve with a browser or by converting the token value to sRGB hex offscreen (e.g. a headless Chromium `getComputedStyle`). Record the result as a table.
+- [x] Step 3: Update every swatch `data-copy` and its `swatch__meta` text (`#HEX · RGB r, g, b`) to the computed hex/RGB from step 2. The nine light swatches: `swatch--primary`, `swatch--primary-hover`, `swatch--secondary`, `swatch--accent`, `swatch--bg`, `swatch--surface`, `swatch--text`, `swatch--text-muted`, `swatch--border` (lines 38-81). The five dark swatches: `swatch--bg`, `swatch--surface`, `swatch--text`, `swatch--text-muted`, `swatch--border` under "Palet Gelap" (lines 88-111). `swatch--secondary` maps to `--color-text-strong` per Task 2 mapping; `swatch--primary-hover` label value equals the primary value.
+- [x] Step 4: Verify: `rg -c '—' index.html` returns 0. Confirm each `data-copy` matches the resolved table. Run `node --check assets/js/main.js` exit 0 and `node --check assets/js/gallery.js` exit 0.
+- [x] Step 5: Commit as `fix: replace em dashes, publish recomputed swatch values`.
 
 ## Task 4: Re-run jig check, close remaining findings → verify: `jig check --json` reports 0 errors
 

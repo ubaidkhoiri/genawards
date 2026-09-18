@@ -1,0 +1,12 @@
+{
+  "version": "0.12.0",
+  "modes": [
+    "product"
+  ],
+  "files": {
+    "assets/css/jig/brand.genawards.css": "sha256:e8325f3b24617635939d94751f6ecb633d07d3fd2dfe0b81779b8953264c197a",
+    "jig.config.json": "sha256:fc16c4751909b5012371dada28633e57172320cb9b34b4cc1f9be9fb89cb9dfe",
+    "assets/css/jig/mode.product.css": "sha256:f193b49d978a7951144d36f7865ed53af7b84365ce79967dbc16dee03881130b",
+    "assets/css/jig/theme.css": "sha256:de193427e2cf2e6e2ef7f4aed0b3f96d16dc9fd4cb2affe9daa66f8bd1d8ebd2"
+  }
+}

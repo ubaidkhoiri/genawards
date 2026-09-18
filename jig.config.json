@@ -1,0 +1,9 @@
+{
+  "brand": "assets/css/jig/brand.genawards.css",
+  "surfaces": [
+    {
+      "match": "/",
+      "mode": "product"
+    }
+  ]
+}

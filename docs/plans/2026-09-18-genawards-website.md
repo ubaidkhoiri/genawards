@@ -64,12 +64,12 @@
 **Files:**
 - Create: `branding.html`
 
-- [ ] Step 1: create `branding.html` with the same head/nav/footer shell
-- [ ] Step 2: add the color palette swatch grid, each swatch labeled with hex and RGB and carrying a per-row data attribute (e.g. `data-copy`) that `main.js` reads for copy behavior
-- [ ] Step 3: add the typography specimens for display, body and mono fonts with name, weight, size and line-height shown
-- [ ] Step 4: add the logo usage section (primary, white, icon-only, horizontal, vertical) with a download button per variant
-- [ ] Step 5: add the Do and Don't grid and the spacing and radius reference scale
-- [ ] Step 6: commit `git add -A && git commit -m "feat: add brand guidelines page"`
+- [x] Step 1: create `branding.html` with the same head/nav/footer shell
+- [x] Step 2: add the color palette swatch grid, each swatch labeled with hex and RGB and carrying a per-row data attribute (e.g. `data-copy`) that `main.js` reads for copy behavior
+- [x] Step 3: add the typography specimens for display, body and mono fonts with name, weight, size and line-height shown
+- [x] Step 4: add the logo usage section (primary, white, icon-only, horizontal, vertical) with a download button per variant
+- [x] Step 5: add the Do and Don't grid and the spacing and radius reference scale
+- [x] Step 6: commit `git add -A && git commit -m "feat: add brand guidelines page"`
 
 ### Verify: `grep -c 'data-copy' branding.html` matches at least 1, the page includes `tokens.css`, `style.css` and `main.js`, and no inline `style=` string appears in the file.
 

@@ -24,15 +24,15 @@
 **Files:**
 - Modify: `index.html`
 
-- [ ] Step 1: Rewrite `index.html` from the current landing page into a single-page layout.
-- [ ] Step 2: Keep the existing `<head>` verbatim: viewport, description, OG tags, Google Fonts link, `tokens.css`, `style.css`, title.
-- [ ] Step 3: `<header class="site-header">` holds only the brand link and the theme toggle button. Remove the `<nav>` block entirely.
-- [ ] Step 4: Open `<main>` with `<section class="section" id="branding">`. Inside: badge "Panduan brand", `<h1 id="panduan-title">Panduan Brand GenAwards</h1>`, the intro paragraph, then move in order from `branding.html`: Palet Warna (light swatch grid of 9 exactly as-is, then "Palet Gelap" subhead + dark swatch grid of 5 exactly as-is), Tipografi (3 type specimens exactly as-is), Penggunaan Logo (5 card--logo blocks exactly as-is), Lakukan dan Jangan (4 card--do-dont exactly as-is), Spacing dan Radius (both scale groups exactly as-is). Change each subsequent heading from `<h2>` with decorated ids to `<h2>` with the same ids (warna-title, tipografi-title, logo-title, aturan-title, skala-title) and keep every `data-copy`, swatch token class, href and download attribute byte-for-byte.
-- [ ] Step 5: Close the branding section, then open `<section class="section" id="assets">`. Inside: badge "Katalog asset", `<h2 id="katalog-title">Semua asset siap unduh</h2>`, then exactly the three elements from `assets.html`: the search input (`id="search"`), the chips container (`id="chips"`), the grid container (`id="grid"`).
-- [ ] Step 6: Close the assets section, then open `<section class="section" id="moodboard">`. Inside: badge "Inspirasi visual", `<h2 id="moodboard-title">Moodboard Event</h2>`, the intro paragraph, then the masonry grid with all 6 `<figure>` elements from `moodboard.html` byte-for-byte.
-- [ ] Step 7: Close `<main>`. Keep the existing footer verbatim.
-- [ ] Step 8: Keep both script tags at the end: `<script src="./assets/js/main.js"></script>` then `<script src="./assets/js/gallery.js"></script>`.
-- [ ] Step 9: Run verify, then commit as `feat: consolidate site into one branding page`.
+- [x] Step 1: Rewrite `index.html` from the current landing page into a single-page layout.
+- [x] Step 2: Keep the existing `<head>` verbatim: viewport, description, OG tags, Google Fonts link, `tokens.css`, `style.css`, title.
+- [x] Step 3: `<header class="site-header">` holds only the brand link and the theme toggle button. Remove the `<nav>` block entirely.
+- [x] Step 4: Open `<main>` with `<section class="section" id="branding">`. Inside: badge "Panduan brand", `<h1 id="panduan-title">Panduan Brand GenAwards</h1>`, the intro paragraph, then move in order from `branding.html`: Palet Warna (light swatch grid of 9 exactly as-is, then "Palet Gelap" subhead + dark swatch grid of 5 exactly as-is), Tipografi (3 type specimens exactly as-is), Penggunaan Logo (5 card--logo blocks exactly as-is), Lakukan dan Jangan (4 card--do-dont exactly as-is), Spacing dan Radius (both scale groups exactly as-is). Change each subsequent heading from `<h2>` with decorated ids to `<h2>` with the same ids (warna-title, tipografi-title, logo-title, aturan-title, skala-title) and keep every `data-copy`, swatch token class, href and download attribute byte-for-byte.
+- [x] Step 5: Close the branding section, then open `<section class="section" id="assets">`. Inside: badge "Katalog asset", `<h2 id="katalog-title">Semua asset siap unduh</h2>`, then exactly the three elements from `assets.html`: the search input (`id="search"`), the chips container (`id="chips"`), the grid container (`id="grid"`).
+- [x] Step 6: Close the assets section, then open `<section class="section" id="moodboard">`. Inside: badge "Inspirasi visual", `<h2 id="moodboard-title">Moodboard Event</h2>`, the intro paragraph, then the masonry grid with all 6 `<figure>` elements from `moodboard.html` byte-for-byte.
+- [x] Step 7: Close `<main>`. Keep the existing footer verbatim.
+- [x] Step 8: Keep both script tags at the end: `<script src="./assets/js/main.js"></script>` then `<script src="./assets/js/gallery.js"></script>`.
+- [x] Step 9: Run verify, then commit as `feat: consolidate site into one branding page`.
 
 ---
 

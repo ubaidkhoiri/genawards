@@ -102,8 +102,8 @@
 **Files:**
 - Create: `.github/workflows/deploy.yml`
 
-- [ ] Step 1: create `.github/workflows/deploy.yml` with the content copied verbatim from the spec (on push to `main` and `workflow_dispatch`, pages permissions, `upload-pages-artifact@v3` with path `.`, deploy via `deploy-pages@v4`)
-- [ ] Step 2: commit `git add -A && git commit -m "ci: add GitHub Pages deploy workflow"`
+- [x] Step 1: create `.github/workflows/deploy.yml` with the content copied verbatim from the spec (on push to `main` and `workflow_dispatch`, pages permissions, `upload-pages-artifact@v3` with path `.`, deploy via `deploy-pages@v4`)
+- [x] Step 2: commit `git add -A && git commit -m "ci: add GitHub Pages deploy workflow"`
 
 ### Verify: `grep -c 'deploy-pages@v4\|upload-pages-artifact@v3\|configure-pages@v5' .github/workflows/deploy.yml` matches at least 1 per term.
 

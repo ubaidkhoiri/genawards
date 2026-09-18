@@ -23,10 +23,10 @@
 - Create: `assets/css/tokens.css`
 - Create: `assets/css/style.css`
 
-- [ ] Step 1: run `git init`
-- [ ] Step 2: create `assets/css/tokens.css` with the `:root` and `[data-theme="dark"]` blocks copied verbatim from the spec (colors `#FF5A1F`, `#E84A0F`, `#1A1A1A`, `#F5E6D3`, `#FAFAF7`, `#FFFFFF`, `#6B6B6B`, `#E5E5E0`, dark `#0F0F0E`, `#1A1A19`, `#F5F5F0`, `#9A9A95`, `#2A2A28`, fonts, 8pt spacing scale, radii, the two shadows, `--ease-out`, `--duration: 220ms`)
-- [ ] Step 3: create `assets/css/style.css` with reset, CSS custom-property-based typography and layout base, visible `:focus-visible` state, and placeholder rules for card, badge, chip, button and toast components
-- [ ] Step 4: run `node --check` on nothing (no JS yet), then commit `git add -A && git commit -m "chore: init repo, tokens and base styles"`
+- [x] Step 1: run `git init`
+- [x] Step 2: create `assets/css/tokens.css` with the `:root` and `[data-theme="dark"]` blocks copied verbatim from the spec (colors `#FF5A1F`, `#E84A0F`, `#1A1A1A`, `#F5E6D3`, `#FAFAF7`, `#FFFFFF`, `#6B6B6B`, `#E5E5E0`, dark `#0F0F0E`, `#1A1A19`, `#F5F5F0`, `#9A9A95`, `#2A2A28`, fonts, 8pt spacing scale, radii, the two shadows, `--ease-out`, `--duration: 220ms`)
+- [x] Step 3: create `assets/css/style.css` with reset, CSS custom-property-based typography and layout base, visible `:focus-visible` state, and placeholder rules for card, badge, chip, button and toast components
+- [x] Step 4: run `node --check` on nothing (no JS yet), then commit `git add -A && git commit -m "chore: init repo, tokens and base styles"`
 
 ### Verify: `tokens.css` defines `--color-primary`, `--font-display`, `--space-md`, `--radius-md` and `--duration` (grep returns at least 1 match each), and `style.css` defines a `:focus-visible` rule (grep returns at least 1 match).
 

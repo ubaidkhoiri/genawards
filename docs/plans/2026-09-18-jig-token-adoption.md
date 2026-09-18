@@ -98,11 +98,11 @@ Focus ring: `.focus-visible` uses `outline: 2px solid var(--color-brand); outlin
 
 Buttons (C-19, lines 133 and 141): `.button` background `var(--color-brand)`, text `var(--color-on-brand)`. `.button:hover` keeps `background-color: var(--color-brand)` (no lighten step; the darker brand color now clears 4.5:1) and its own `color: var(--color-on-brand)`. Delete the `:hover` background change.
 
-- [ ] Step 1: Apply the token mapping above across the whole file (every legacy `--color-*`, `--space-*`, `--shadow-*`, `--duration`, `--font-body`, `--radius-*` occurrence). No occurrence may remain.
-- [ ] Step 2: Replace the 12 hardcoded font sizes per the table. No `font-size` may carry a raw length.
-- [ ] Step 3: Fix the two C-19 sites (`.button` and `.button:hover`, lines 133 and 141) per the buttons paragraph.
-- [ ] Step 4: Run `rg -c 'var\(--color-(primary|primary-hover|secondary|surface|bg\)|var\(--space-|var\(--shadow-card)|var\(--shadow-hover)|var\(--duration\)|var\(--font-body\)' assets/css/style.css`, expect no match (count 0). Run `rg -c 'font-size: [0-9]' assets/css/style.css`, expect no match. Run `node --check assets/js/main.js` and `node --check assets/js/gallery.js`, expect exit code 0 each (guards against a stray edit).
-- [ ] Step 5: Commit as `refactor: migrate styles to jig tokens`.
+- [x] Step 1: Apply the token mapping above across the whole file (every legacy `--color-*`, `--space-*`, `--shadow-*`, `--duration`, `--font-body`, `--radius-*` occurrence). No occurrence may remain.
+- [x] Step 2: Replace the 12 hardcoded font sizes per the table. No `font-size` may carry a raw length.
+- [x] Step 3: Fix the two C-19 sites (`.button` and `.button:hover`, lines 133 and 141) per the buttons paragraph.
+- [x] Step 4: Run `rg -c 'var\(--color-(primary|primary-hover|secondary|surface|bg\)|var\(--space-|var\(--shadow-card)|var\(--shadow-hover)|var\(--duration\)|var\(--font-body\)' assets/css/style.css`, expect no match (count 0). Run `rg -c 'font-size: [0-9]' assets/css/style.css`, expect no match. Run `node --check assets/js/main.js` and `node --check assets/js/gallery.js`, expect exit code 0 each (guards against a stray edit).
+- [x] Step 5: Commit as `refactor: migrate styles to jig tokens`.
 
 ## Task 3: Fix index.html em dashes + recompute swatch values → verify: `rg -c '—' index.html` returns 0; all `data-copy` values match computed token hexes
 

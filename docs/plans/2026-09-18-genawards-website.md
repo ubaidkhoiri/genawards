@@ -90,10 +90,10 @@
 **Files:**
 - Create: `assets/js/main.js`
 
-- [ ] Step 1: create `assets/js/main.js` with theme toggle (reads `localStorage`, applies `data-theme` on `<html>`, defaulting to light), a "Copied!" toast, copy-to-clipboard delegated across `[data-copy]` elements via `navigator.clipboard.writeText()`, active nav state per page, and the shared `<dialog>` lightbox opener
-- [ ] Step 2: run `node --check assets/js/main.js`
-- [ ] Step 3: run `node -e "const fs=require('fs');const a=fs.statSync('assets/js/main.js').size;const b=fs.statSync('assets/js/gallery.js').size;if(a+b>=15360)process.exit(1)"` to confirm the combined budget
-- [ ] Step 4: commit `git add -A && git commit -m "feat: add theme toggle and clipboard interactions"`
+- [x] Step 1: create `assets/js/main.js` with theme toggle (reads `localStorage`, applies `data-theme` on `<html>`, defaulting to light), a "Copied!" toast, copy-to-clipboard delegated across `[data-copy]` elements via `navigator.clipboard.writeText()`, active nav state per page, and the shared `<dialog>` lightbox opener
+- [x] Step 2: run `node --check assets/js/main.js`
+- [x] Step 3: run `node -e "const fs=require('fs');const a=fs.statSync('assets/js/main.js').size;const b=fs.statSync('assets/js/gallery.js').size;if(a+b>=15360)process.exit(1)"` to confirm the combined budget
+- [x] Step 4: commit `git add -A && git commit -m "feat: add theme toggle and clipboard interactions"`
 
 ### Verify: `node --check assets/js/main.js` exits 0, `main.js` contains `navigator.clipboard` and `localStorage` (grep matches at least 1 each), and the combined size check in Step 3 exits 0.
 

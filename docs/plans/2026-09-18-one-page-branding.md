@@ -43,8 +43,8 @@
 - Modify: `assets/css/style.css`
 - Modify: `assets/js/main.js`
 
-- [ ] Step 1: `git rm branding.html assets.html moodboard.html`.
-- [ ] Step 2: In `assets/css/style.css`, change the `.section` rule so the page reads compact: replace `padding-block: var(--space-2xl) var(--space-xl);` with `padding-block: var(--space-xl) var(--space-lg);`. The first section gets top padding from the header, so the page opens tight against the brand bar.
-- [ ] Step 3: In `assets/css/style.css`, remove the now-dead rules that served only the landing page: the `.hero` block (lines 221-244), `.card--link` and `.card--link:hover` (lines 256-264), and `.card__meta` (lines 266-270). Leave `.button--ghost` in place (gallery uses the paired `.btn--ghost`).
-- [ ] Step 4: In `assets/js/main.js`, remove the active-nav block (the final statement block: the `if (!document.querySelector('.nav__link[aria-current]'))` guard through the closing brace before the IIFE ends). No nav exists anymore.
-- [ ] Step 5: Run verify, then commit as `refactor: delete legacy pages, compact spacing, trim nav js`.
+- [x] Step 1: `git rm branding.html assets.html moodboard.html`.
+- [x] Step 2: In `assets/css/style.css`, change the `.section` rule so the page reads compact: replace `padding-block: var(--space-2xl) var(--space-xl);` with `padding-block: var(--space-xl) var(--space-lg);`. The first section gets top padding from the header, so the page opens tight against the brand bar.
+- [x] Step 3: In `assets/css/style.css`, remove the now-dead rules that served only the landing page: the `.hero` block (lines 221-244), `.card--link` and `.card--link:hover` (lines 256-264), and `.card__meta` (lines 266-270). Leave `.button--ghost` in place (gallery uses the paired `.btn--ghost`).
+- [x] Step 4: In `assets/js/main.js`, remove the active-nav block (the final statement block: the `if (!document.querySelector('.nav__link[aria-current]'))` guard through the closing brace before the IIFE ends). No nav exists anymore.
+- [x] Step 5: Run verify, then commit as `refactor: delete legacy pages, compact spacing, trim nav js`.

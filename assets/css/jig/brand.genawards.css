@@ -54,6 +54,8 @@
   --color-stroke-brand-weak:   hsl(var(--brand-h) var(--brand-s) var(--brand-l) / 20%);
   --color-fill-brand:          hsl(var(--brand-h) var(--brand-s) var(--brand-l) / 5%);
   --color-on-brand:            oklch(1 0 0);   /* text on a solid brand fill */
+  --color-accent:       oklch(0.93 0.04 80);   /* warm cream, brand-specific fill */
+  --color-accent-text:  var(--color-text-strong);
 
   /* ================= SYSTEM COLOURS =================
      Three, with familiar traffic-light meanings. Four variations each.
@@ -121,9 +123,9 @@
   --focus-ring-offset: 2px;
 
   /* ================= TYPE ================= */
-  --font-text:    ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: var(--font-text);
-  --font-mono:    ui-monospace, "SF Mono", "Cascadia Code", monospace;
+  --font-text:    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Inter", serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", "Cascadia Code", monospace;
   --font-numeric-features: "tnum" 1, "lnum" 1;
 
   /* ================= RADIUS — four, by element size ================= */
@@ -175,6 +177,8 @@
 
     --brand-l: 88%;      /* lighten and desaturate the brand for dark surfaces */
     --color-on-brand: hsl(var(--brand-h) 6% 10%);
+    --color-accent:       oklch(0.30 0.02 80);   /* warm cream fill, dark adjusted */
+    --color-accent-text:  var(--color-text-strong);
 
     /* System colours lighten and desaturate in dark mode. Only the h/s/l and
        fill-alpha vars need overriding here — the four hsl() declarations
@@ -207,6 +211,8 @@
 
     --brand-l: 88%;      /* lighten and desaturate the brand for dark surfaces */
     --color-on-brand: hsl(var(--brand-h) 6% 10%);
+    --color-accent:       oklch(0.30 0.02 80);   /* warm cream fill, dark adjusted */
+    --color-accent-text:  var(--color-text-strong);
 
     /* System colours lighten and desaturate in dark mode. Only the h/s/l and
        fill-alpha vars need overriding here — the four hsl() declarations

@@ -117,6 +117,27 @@
 
 ### Verify: `grep -c 'assets/data/assets.json\|assets/css/tokens.css\|GitHub Actions' README.md` matches at least 1 per term.
 
+## Task 9: close spec gaps from verify sweep (ZIP, copy path, logo downloads, 1024 breakpoint)
+
+**Files:**
+- Modify: `assets/js/gallery.js`
+- Modify: `assets/data/assets.json`
+- Modify: `branding.html`
+- Modify: `assets/css/style.css`
+- Create: `downloads/packs/logo-pack.zip`
+- Create: `downloads/svg/logo-white.svg`
+- Create: `downloads/svg/logo-icon.svg`
+- Create: `downloads/svg/logo-horizontal.svg`
+- Create: `downloads/svg/logo-vertical.svg`
+
+- [ ] Step 1: create ZIP bundles in `downloads/packs/` using PowerShell Compress-Archive, at minimum `logo-pack.zip` bundling the two logo SVG files
+- [ ] Step 2: extend `assets/data/assets.json` with a `downloads.zip` field per asset pointing into `downloads/packs/`, and add a ZIP download button plus a Copy path button (reusing the existing `data-copy` delegation) to the card markup in `assets/js/gallery.js`
+- [ ] Step 3: fix the 5 logo download hrefs in `branding.html` to point at `./downloads/svg/logo-<variant>.svg` and create the 4 missing variant placeholder SVG files in `downloads/svg/`
+- [ ] Step 4: add an `@media (min-width: 1024px)` block to `assets/css/style.css`
+- [ ] Step 5: commit `git add -A && git commit -m "feat: close catalog and branding gaps"`
+
+### Verify: `node --check assets/js/gallery.js` exits 0, a node script resolves every `./downloads/...` href in `branding.html` to an existing file and finds at least one `*.zip` under `downloads/packs/`, `grep -c 'min-width: 1024px' assets/css/style.css` matches at least 1, and `grep -c 'data-copy\|ZIP' assets/js/gallery.js` matches at least 1 per term.
+
 ## Self-review
 
 1. **Spec coverage.** All 8 numbered order-of-work items map to Tasks 1 through 8. Folder structure, tokens, pages, interactions, accessibility, workflow and README each have a task. Dark theme toggle, toast, copy, download, search, filter, lazy loading and OG tags appear across the tasks.

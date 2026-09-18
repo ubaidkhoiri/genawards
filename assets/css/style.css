@@ -58,6 +58,15 @@ h6 {
   color: var(--color-text-strong);
 }
 
+h2,
+h3 {
+  margin-block: var(--spacing-heading-before) var(--spacing-heading-after);
+}
+
+h1 {
+  margin-block: 0 var(--spacing-stack);
+}
+
 /* Layout base */
 .container {
   width: 100%;
@@ -176,7 +185,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-s);
+  gap: var(--spacing-inline);
   flex-wrap: wrap;
   padding-block: var(--spacing-s);
 }
@@ -200,7 +209,7 @@ h6 {
 }
 
 .section {
-  padding-block: var(--spacing-l) var(--spacing-m);
+  padding-block: var(--spacing-section) var(--spacing-section-sm);
 }
 
 .grid {
@@ -245,7 +254,7 @@ h6 {
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-group);
   margin-bottom: var(--spacing-m);
 }
 
@@ -271,8 +280,8 @@ h6 {
 
 .card--asset__actions {
   display: flex;
-  gap: var(--spacing-xs);
-  margin-top: var(--spacing-s);
+  gap: var(--spacing-inline);
+  margin-top: var(--spacing-stack);
 }
 
 .preview-box {
@@ -327,17 +336,17 @@ h6 {
 .section__intro {
   max-width: 60ch;
   color: var(--color-text-weak);
-  margin-bottom: var(--spacing-s);
+  margin-bottom: var(--spacing-stack);
 }
 
 .subhead {
-  margin-top: var(--spacing-l);
+  margin-top: var(--spacing-heading-before);
 }
 
 .swatch {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-group);
 }
 
 .swatch__preview {
@@ -367,7 +376,7 @@ h6 {
 .swatch--border .swatch__preview { background-color: var(--color-stroke-weak); }
 
 .type {
-  padding-block: var(--spacing-s);
+  padding-block: var(--spacing-stack);
   border-bottom: 1px solid var(--color-stroke-weak);
 }
 
@@ -402,14 +411,14 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-xs);
-  padding: var(--spacing-m);
+  padding: var(--spacing-card);
 }
 
 .card--do-dont {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
-  padding: var(--spacing-s);
+  padding: var(--spacing-stack);
 }
 
 .scale {

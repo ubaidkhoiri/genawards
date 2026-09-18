@@ -78,10 +78,10 @@
 **Files:**
 - Create: `moodboard.html`
 
-- [ ] Step 1: create `moodboard.html` with the same head/nav/footer shell
-- [ ] Step 2: add the masonry-style grid (`grid-auto-rows` plus row spans) of 6 `<figure>` items, each with `loading="lazy"` image and caption covering source and mood keywords
-- [ ] Step 3: add at least 1 `row-span` class variation in the grid classes and one `assets/moodboard/` placeholder image per figure
-- [ ] Step 4: commit `git add -A && git commit -m "feat: add moodboard page"`
+- [x] Step 1: create `moodboard.html` with the same head/nav/footer shell
+- [x] Step 2: add the masonry-style grid (`grid-auto-rows` plus row spans) of 6 `<figure>` items, each with `loading="lazy"` image and caption covering source and mood keywords
+- [x] Step 3: add at least 1 `row-span` class variation in the grid classes and one `assets/moodboard/` placeholder image per figure
+- [x] Step 4: commit `git add -A && git commit -m "feat: add moodboard page"`
 
 ### Verify: `grep -c 'row-span\|<figure' moodboard.html` matches at least 1 per term, the page includes `main.js`, and no inline `style=` string appears in the file.
 

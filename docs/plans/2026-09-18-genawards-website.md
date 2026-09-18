@@ -130,11 +130,11 @@
 - Create: `downloads/svg/logo-horizontal.svg`
 - Create: `downloads/svg/logo-vertical.svg`
 
-- [ ] Step 1: create ZIP bundles in `downloads/packs/` using PowerShell Compress-Archive, at minimum `logo-pack.zip` bundling the two logo SVG files
-- [ ] Step 2: extend `assets/data/assets.json` with a `downloads.zip` field per asset pointing into `downloads/packs/`, and add a ZIP download button plus a Copy path button (reusing the existing `data-copy` delegation) to the card markup in `assets/js/gallery.js`
-- [ ] Step 3: fix the 5 logo download hrefs in `branding.html` to point at `./downloads/svg/logo-<variant>.svg` and create the 4 missing variant placeholder SVG files in `downloads/svg/`
-- [ ] Step 4: add an `@media (min-width: 1024px)` block to `assets/css/style.css`
-- [ ] Step 5: commit `git add -A && git commit -m "feat: close catalog and branding gaps"`
+- [x] Step 1: create ZIP bundles in `downloads/packs/` using PowerShell Compress-Archive, at minimum `logo-pack.zip` bundling the two logo SVG files
+- [x] Step 2: extend `assets/data/assets.json` with a `downloads.zip` field per asset pointing into `downloads/packs/`, and add a ZIP download button plus a Copy path button (reusing the existing `data-copy` delegation) to the card markup in `assets/js/gallery.js`
+- [x] Step 3: fix the 5 logo download hrefs in `branding.html` to point at `./downloads/svg/logo-<variant>.svg` and create the 4 missing variant placeholder SVG files in `downloads/svg/`
+- [x] Step 4: add an `@media (min-width: 1024px)` block to `assets/css/style.css`
+- [x] Step 5: commit `git add -A && git commit -m "feat: close catalog and branding gaps"`
 
 ### Verify: `node --check assets/js/gallery.js` exits 0, a node script resolves every `./downloads/...` href in `branding.html` to an existing file and finds at least one `*.zip` under `downloads/packs/`, `grep -c 'min-width: 1024px' assets/css/style.css` matches at least 1, and `grep -c 'data-copy\|ZIP' assets/js/gallery.js` matches at least 1 per term.
 

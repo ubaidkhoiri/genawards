@@ -5,6 +5,11 @@ const searchInput = document.querySelector('#search');
 let data = { assets: [] };
 let currentCategory = 'all';
 
+function escapeHtml(str) {
+  const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+  return str.replace(/[&<>"']/g, (c) => map[c]);
+}
+
 function renderGrid(assets, category = currentCategory) {
   const term = searchInput.value.trim().toLowerCase();
   const items = assets.filter((a) => {
@@ -22,9 +27,9 @@ function renderGrid(assets, category = currentCategory) {
           <img src="${a.preview}" alt="${a.name}" loading="lazy">
         </div>
         <div class="card--asset__body">
-          <span class="badge">${a.category}</span>
-          <h3>${a.name}</h3>
-          <p>${a.description}</p>
+          <span class="badge">${escapeHtml(a.category)}</span>
+          <h3>${escapeHtml(a.name)}</h3>
+          <p>${escapeHtml(a.description)}</p>
           <div class="card--asset__actions">
             ${a.downloads.svg ? `<a class="btn" href="${a.downloads.svg}" download>SVG</a>` : ''}
             <a class="btn" href="${a.downloads.png}" download>PNG</a>

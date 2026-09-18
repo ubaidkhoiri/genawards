@@ -280,6 +280,17 @@ h6 {
   color: var(--color-text);
 }
 
+.btn--ghost {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
 /* Gallery */
 .search {
   width: 100%;

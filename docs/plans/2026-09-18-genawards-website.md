@@ -35,12 +35,12 @@
 **Files:**
 - Create: `index.html`
 
-- [ ] Step 1: create `index.html` with `<head>` carrying viewport, description, Open Graph and Google Fonts `<link>` for Fraunces, Inter and JetBrains Mono, plus the page `<header>` with `<nav>` and the theme toggle hook
-- [ ] Step 2: build the hero section with title, tagline and two CTAs linking to `assets.html` and `branding.html`
-- [ ] Step 3: add the category preview grid (Logo, Banner, Icon, Background) using cards styled by `style.css`
-- [ ] Step 4: add the "Cara Pakai" section (three steps: pilih, download, pakai) and the footer with a GitHub repo link
-- [ ] Step 5: add the `<script src="./assets/js/main.js">` include
-- [ ] Step 6: commit `git add -A && git commit -m "feat: add landing page"`
+- [x] Step 1: create `index.html` with `<head>` carrying viewport, description, Open Graph and Google Fonts `<link>` for Fraunces, Inter and JetBrains Mono, plus the page `<header>` with `<nav>` and the theme toggle hook
+- [x] Step 2: build the hero section with title, tagline and two CTAs linking to `assets.html` and `branding.html`
+- [x] Step 3: add the category preview grid (Logo, Banner, Icon, Background) using cards styled by `style.css`
+- [x] Step 4: add the "Cara Pakai" section (three steps: pilih, download, pakai) and the footer with a GitHub repo link
+- [x] Step 5: add the `<script src="./assets/js/main.js">` include
+- [x] Step 6: commit `git add -A && git commit -m "feat: add landing page"`
 
 ### Verify: `grep -c 'hero\|assets.html\|branding.html' index.html` matches at least 1 per term, the file links `tokens.css` and `style.css` and `main.js`, meta `viewports` and Open Graph tags are present, and no inline `style=` string appears in the file.
 

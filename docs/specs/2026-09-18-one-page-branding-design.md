@@ -1,7 +1,7 @@
 ---
 title: One-page Branding Consolidation
 date: 2026-09-18
-status: draft
+status: approved
 ---
 
 # One-page Branding Consolidation: Design

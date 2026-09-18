@@ -104,13 +104,4 @@
     }
   }
 
-  if (!document.querySelector('.nav__link[aria-current]')) {
-    var page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    var links = document.querySelectorAll('.nav__link');
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].getAttribute('href').split('/').pop().toLowerCase() === page) {
-        links[i].setAttribute('aria-current', 'page');
-      }
-    }
-  }
 })();

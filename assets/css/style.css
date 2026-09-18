@@ -217,56 +217,14 @@ h6 {
   padding-block: var(--space-xl);
 }
 
-/* Landing sections */
-.hero {
-  padding-block: var(--space-2xl);
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: clamp(2.25rem, 5vw, 3.5rem);
-  max-width: 18ch;
-  margin-inline: auto;
-}
-
-.hero__tagline {
-  color: var(--color-text-muted);
-  font-size: 1.125rem;
-  max-width: 45ch;
-  margin-inline: auto;
-}
-
-.hero__actions {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-sm);
-  flex-wrap: wrap;
-}
-
 .section {
-  padding-block: var(--space-2xl) var(--space-xl);
+  padding-block: var(--space-xl) var(--space-lg);
 }
 
 .grid {
   display: grid;
   gap: var(--space-md);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.card--link {
-  display: block;
-  color: var(--color-text);
-  padding: var(--space-lg);
-}
-
-.card--link:hover {
-  color: var(--color-text);
-}
-
-.card__meta {
-  color: var(--color-text-muted);
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
 }
 
 .button--ghost {

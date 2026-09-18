@@ -51,11 +51,11 @@
 - Create: `assets/js/gallery.js`
 - Create: `assets.html`
 
-- [ ] Step 1: create `assets/data/assets.json` with the exact schema from the spec (`id`, `name`, `category`, `tags`, `preview`, `downloads.svg`, `downloads.png`, `description`) and 5 dummy assets spread across the logo, banner, icon and background categories
-- [ ] Step 2: create `assets/js/gallery.js` that loads `./assets/data/assets.json`, renders cards into the grid, builds the category chips (All plus each category present in data), filters on chip click, filters by search input on name and tags, renders the checkered preview box, and attaches SVG/PNG download links
-- [ ] Step 3: create the thumbnail placeholder PNG files referenced by the 5 dummy assets under `assets/images/logos/`, `assets/images/banners/`, `assets/images/icons/` and `assets/images/backgrounds/`
-- [ ] Step 4: create `assets.html` with search input, chip row, card grid container and the same head/nav/footer shell as the landing page
-- [ ] Step 5: commit `git add -A && git commit -m "feat: add asset catalog and gallery"`
+- [x] Step 1: create `assets/data/assets.json` with the exact schema from the spec (`id`, `name`, `category`, `tags`, `preview`, `downloads.svg`, `downloads.png`, `description`) and 5 dummy assets spread across the logo, banner, icon and background categories
+- [x] Step 2: create `assets/js/gallery.js` that loads `./assets/data/assets.json`, renders cards into the grid, builds the category chips (All plus each category present in data), filters on chip click, filters by search input on name and tags, renders the checkered preview box, and attaches SVG/PNG download links
+- [x] Step 3: create the thumbnail placeholder PNG files referenced by the 5 dummy assets under `assets/images/logos/`, `assets/images/banners/`, `assets/images/icons/` and `assets/images/backgrounds/`
+- [x] Step 4: create `assets.html` with search input, chip row, card grid container and the same head/nav/footer shell as the landing page
+- [x] Step 5: commit `git add -A && git commit -m "feat: add asset catalog and gallery"`
 
 ### Verify: `node -e "const d=require('./assets/data/assets.json'); if(!Array.isArray(d.assets)||d.assets.length<4||d.assets.length>6) process.exit(1)"` exits 0, `node --check assets/js/gallery.js` exits 0, and every `preview` path in `assets.json` resolves to an existing file.
 

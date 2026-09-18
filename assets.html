@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Katalog asset desain siap pakai untuk event: logo, banner, ikon, dan background. Unduh gratis dalam format SVG, PNG, atau ZIP.">
+  <meta property="og:title" content="GenAwards — Design Kit Event">
+  <meta property="og:description" content="Katalog asset desain siap pakai untuk event: logo, banner, ikon, dan background.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ubaidkhoiri.github.io/genawards/">
+  <title>Asset — GenAwards Design Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__brand" href="./index.html">GenAwards</a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="nav__link" href="./index.html">Beranda</a>
+        <a class="nav__link" href="./assets.html" aria-current="page">Asset</a>
+        <a class="nav__link" href="./branding.html">Branding</a>
+        <a class="nav__link" href="./moodboard.html">Moodboard</a>
+      </nav>
+      <button class="chip" type="button" data-theme-toggle aria-label="Ganti tema terang atau gelap">Ganti tema</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="katalog-title">
+      <div class="container">
+        <span class="badge">Katalog asset</span>
+        <h1 id="katalog-title">Semua asset siap unduh</h1>
+        <input class="search" type="search" id="search" placeholder="Cari nama atau tag..." aria-label="Cari asset">
+        <div class="chips" id="chips" role="group" aria-label="Filter kategori"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>GenAwards Design Kit dibangun untuk kebutuhan visual acara. Kode sumber terbuka di <a href="https://github.com/ubaidkhoiri/genawards" target="_blank" rel="noopener">GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/gallery.js"></script>
+</body>
+</html>

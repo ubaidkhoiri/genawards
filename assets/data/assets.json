@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "id": "logo-primary",
+      "name": "Logo Primary",
+      "category": "logo",
+      "tags": ["logo", "primary"],
+      "preview": "./assets/images/logos/logo-primary-preview.png",
+      "downloads": {
+        "svg": "./downloads/svg/logo-primary.svg",
+        "png": "./downloads/png/logo-primary.png"
+      },
+      "description": "Logo utama GenAwards untuk header dan banner."
+    },
+    {
+      "id": "logo-mark",
+      "name": "Logo Mark",
+      "category": "logo",
+      "tags": ["logo", "mark"],
+      "preview": "./assets/images/logos/logo-mark-preview.png",
+      "downloads": {
+        "svg": "./downloads/svg/logo-mark.svg",
+        "png": "./downloads/png/logo-mark.png"
+      },
+      "description": "Simbol logo tanpa teks, cocok untuk avatar dan favicon."
+    },
+    {
+      "id": "banner-hero",
+      "name": "Banner Hero",
+      "category": "banner",
+      "tags": ["banner", "hero", "web"],
+      "preview": "./assets/images/banners/banner-hero-preview.png",
+      "downloads": {
+        "svg": "./downloads/svg/banner-hero.svg",
+        "png": "./downloads/png/banner-hero.png"
+      },
+      "description": "Banner utama untuk web dan media sosial."
+    },
+    {
+      "id": "icon-badge",
+      "name": "Ikon Badge",
+      "category": "icon",
+      "tags": ["icon", "badge"],
+      "preview": "./assets/images/icons/icon-badge-preview.png",
+      "downloads": {
+        "svg": "./downloads/svg/icon-badge.svg",
+        "png": "./downloads/png/icon-badge.png"
+      },
+      "description": "Ikon badge penghargaan untuk materi digital dan cetak."
+    },
+    {
+      "id": "background-texture",
+      "name": "Background Tekstur",
+      "category": "background",
+      "tags": ["background", "tekstur", "pola"],
+      "preview": "./assets/images/backgrounds/background-texture-preview.png",
+      "downloads": {
+        "svg": "./downloads/svg/background-texture.svg",
+        "png": "./downloads/png/background-texture.png"
+      },
+      "description": "Tekstur latar halus untuk konten promosi dan poster."
+    }
+  ]
+}

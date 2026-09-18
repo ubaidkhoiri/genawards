@@ -112,8 +112,8 @@
 **Files:**
 - Create: `README.md`
 
-- [ ] Step 1: create `README.md` documenting (a) add asset: upload to `downloads/svg/` and `downloads/png/`, add entry to `assets/data/assets.json`, commit, (b) change brand color: edit `assets/css/tokens.css`, commit, (c) add moodboard: upload image to `assets/moodboard/`, add `<figure>` in `moodboard.html`, (d) deploy: push to `main`, live in about 1 minute, (e) GitHub Pages setup: Settings, Pages, Source GitHub Actions, (f) the folder structure and the zero-build constraint
-- [ ] Step 2: commit `git add -A && git commit -m "docs: add README with content update guide"`
+- [x] Step 1: create `README.md` documenting (a) add asset: upload to `downloads/svg/` and `downloads/png/`, add entry to `assets/data/assets.json`, commit, (b) change brand color: edit `assets/css/tokens.css`, commit, (c) add moodboard: upload image to `assets/moodboard/`, add `<figure>` in `moodboard.html`, (d) deploy: push to `main`, live in about 1 minute, (e) GitHub Pages setup: Settings, Pages, Source GitHub Actions, (f) the folder structure and the zero-build constraint
+- [x] Step 2: commit `git add -A && git commit -m "docs: add README with content update guide"`
 
 ### Verify: `grep -c 'assets/data/assets.json\|assets/css/tokens.css\|GitHub Actions' README.md` matches at least 1 per term.
 

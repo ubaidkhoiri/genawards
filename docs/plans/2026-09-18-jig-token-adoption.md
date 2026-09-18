@@ -122,7 +122,7 @@ Buttons (C-19, lines 133 and 141): `.button` background `var(--color-brand)`, te
 **Files:**
 - Any of the above, as the check dictates
 
-- [ ] Step 1: Run `npx jig-ui@0.12.0 check --all --json`. Expect 0 errors (warnings may remain and are logged, not gated).
-- [ ] Step 2: If any `error`-severity finding remains, resolve it within the token layer or `style.css`: a finding that needs a new token is a value added to `assets/css/jig/brand.genawards.css` (edited file, safe from `jig update`), never a raw value at a call site.
-- [ ] Step 3: Commit only if a code change was made, as `fix: resolve remaining jig findings`.
-- [ ] Step 4: Run `git status --porcelain`, expect clean.
+- [x] Step 1: Run `npx jig-ui@0.12.0 check --all --json`. Expect 0 errors (warnings may remain and are logged, not gated).
+- [x] Step 2: If any `error`-severity finding remains, resolve it within the token layer or `style.css`: a finding that needs a new token is a value added to `assets/css/jig/brand.genawards.css` (edited file, safe from `jig update`), never a raw value at a call site.
+- [x] Step 3: Commit only if a code change was made, as `fix: resolve remaining jig findings`.
+- [x] Step 4: Run `git status --porcelain`, expect clean.

@@ -28,6 +28,8 @@ function renderGrid(assets, category = currentCategory) {
           <div class="card--asset__actions">
             ${a.downloads.svg ? `<a class="btn" href="${a.downloads.svg}" download>SVG</a>` : ''}
             <a class="btn" href="${a.downloads.png}" download>PNG</a>
+            ${a.downloads.zip ? `<a class="btn" href="${a.downloads.zip}" download>ZIP</a>` : ''}
+            ${a.downloads.svg ? `<a class="btn btn--ghost" data-copy="${a.downloads.svg}">Copy path</a>` : ''}
           </div>
         </div>
       </article>

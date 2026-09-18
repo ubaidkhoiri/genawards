@@ -8,7 +8,8 @@
       "preview": "./assets/images/logos/logo-primary-preview.png",
       "downloads": {
         "svg": "./downloads/svg/logo-primary.svg",
-        "png": "./downloads/png/logo-primary.png"
+        "png": "./downloads/png/logo-primary.png",
+        "zip": "./downloads/packs/logo-pack.zip"
       },
       "description": "Logo utama GenAwards untuk header dan banner."
     },
@@ -20,7 +21,8 @@
       "preview": "./assets/images/logos/logo-mark-preview.png",
       "downloads": {
         "svg": "./downloads/svg/logo-mark.svg",
-        "png": "./downloads/png/logo-mark.png"
+        "png": "./downloads/png/logo-mark.png",
+        "zip": "./downloads/packs/logo-pack.zip"
       },
       "description": "Simbol logo tanpa teks, cocok untuk avatar dan favicon."
     },
@@ -32,7 +34,8 @@
       "preview": "./assets/images/banners/banner-hero-preview.png",
       "downloads": {
         "svg": "./downloads/svg/banner-hero.svg",
-        "png": "./downloads/png/banner-hero.png"
+        "png": "./downloads/png/banner-hero.png",
+        "zip": "./downloads/packs/logo-pack.zip"
       },
       "description": "Banner utama untuk web dan media sosial."
     },
@@ -44,7 +47,8 @@
       "preview": "./assets/images/icons/icon-badge-preview.png",
       "downloads": {
         "svg": "./downloads/svg/icon-badge.svg",
-        "png": "./downloads/png/icon-badge.png"
+        "png": "./downloads/png/icon-badge.png",
+        "zip": "./downloads/packs/logo-pack.zip"
       },
       "description": "Ikon badge penghargaan untuk materi digital dan cetak."
     },
@@ -56,7 +60,8 @@
       "preview": "./assets/images/backgrounds/background-texture-preview.png",
       "downloads": {
         "svg": "./downloads/svg/background-texture.svg",
-        "png": "./downloads/png/background-texture.png"
+        "png": "./downloads/png/background-texture.png",
+        "zip": "./downloads/packs/logo-pack.zip"
       },
       "description": "Tekstur latar halus untuk konten promosi dan poster."
     }

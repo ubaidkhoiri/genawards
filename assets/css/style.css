@@ -154,6 +154,12 @@ h6 {
   opacity: 1;
 }
 
+.copy-fallback {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Page shell */
 .site-header {
   background-color: var(--color-surface);

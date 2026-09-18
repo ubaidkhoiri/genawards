@@ -19,7 +19,7 @@
 - Modify: `assets/css/jig/brand.genawards.css`
 - Modify: `jig.config.json` (already committed as workspace state; confirm content, do not re-commit)
 
-- [ ] Step 1: Replace the entire body of `assets/css/tokens.css` with an aggregator: a header comment naming jig as the token source, then at the very top:
+- [x] Step 1: Replace the entire body of `assets/css/tokens.css` with an aggregator: a header comment naming jig as the token source, then at the very top:
 ```css
 @import "./jig/theme.css";
 ```
@@ -29,7 +29,7 @@ The full file content becomes:
    (assets/css/jig/). This file only wires it into the page. */
 @import "./jig/theme.css";
 ```
-- [ ] Step 2: In `assets/css/jig/brand.genawards.css`, in the `:root` block, replace the `/* ================= TYPE ================= */` section (lines 123-127) so brand typography is kept:
+- [x] Step 2: In `assets/css/jig/brand.genawards.css`, in the `:root` block, replace the `/* ================= TYPE ================= */` section (lines 123-127) so brand typography is kept:
 ```css
   --font-text:    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "Fraunces", "Inter", serif;
@@ -46,7 +46,7 @@ Then mirror it in BOTH dark blocks (the `@media (prefers-color-scheme: dark)` bl
   --color-accent:       oklch(0.30 0.02 80);   /* warm cream fill, dark adjusted   */
   --color-accent-text:  var(--color-text-strong);
 ```
-- [ ] Step 4: Verify the four blocks are present, then commit as `feat: adopt jig token layer, keep brand fonts`.
+- [x] Step 4: Verify the four blocks are present, then commit as `feat: adopt jig token layer, keep brand fonts`.
 
 ## Task 2: Migrate style.css to jig tokens → verify: `node`/`rg` checks below exit 0
 

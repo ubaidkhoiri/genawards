@@ -63,6 +63,14 @@ h3 {
   margin-block: var(--spacing-heading-before) var(--spacing-heading-after);
 }
 
+.section .container > .badge:not(:first-child) {
+  margin-block-start: var(--spacing-heading-before);
+}
+
+.badge + h2 {
+  margin-block-start: var(--spacing-heading-after);
+}
+
 h1 {
   margin-block: 0 var(--spacing-stack);
 }
@@ -412,6 +420,10 @@ h1 {
   align-items: flex-start;
   gap: var(--spacing-xs);
   padding: var(--spacing-card);
+}
+
+.card--logo h3 {
+  margin-block: 0;
 }
 
 .card--do-dont {
